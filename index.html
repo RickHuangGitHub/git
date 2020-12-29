@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+
+	<script type="text/javascript">
+		function changPic(picUrl){
+			document.myPic.src=picUrl
+		}
+
+
+		function mouseIn(){
+			document.myPic.src="anime/20201224_203154.jpg"
+		}
+		function mouseOut(){
+			document.myPic.src="anime/b6339e74f581f45daa875082f4b2d27e.jpg"
+		}
+
+
+	</script>
+
+
+</head>
+<body>
+<form name="mtform">
+	<input type="button" value="love" onclick="changPic('anime/20201224_203120.jpg')" name="">
+	<input type="button" value="moon" onclick="changPic('anime/20201224_203146.jpg')" name="">
+</form>
+
+
+<img name="myPic" border="0" src="anime/EMoaSG5UUAIafct.jpg" onmouseover="mouseIn()" onmouseout="mouseOut()">
+
+
+</body>
+</html>
